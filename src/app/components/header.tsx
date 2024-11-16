@@ -2,37 +2,41 @@ import Link from "next/link";
 import React from "react";
 import { CiLocationOn, CiSearch } from "react-icons/ci";
 import { HiUserCircle } from "react-icons/hi";
+import Navbar from "./menu";
 
 const Header = () => {
   return (
     <header>
       <div className="flex justify-between border-b-2 border-gray-500 p-2">
         <div>
-          <h1 className="text-3xl">
+          <h1 className="text-3xl max-[440px]:text-xl">
             <span className="font-bold ">shop</span>cart
           </h1>
         </div>
         <div className="flex items-center gap-2 ">
-          <HiUserCircle className="text-2xl" />
+          <HiUserCircle className="text-2xl max-[440px]:text-xl" />
           <h1>Sign In</h1>
         </div>
       </div>
       <div className="flex justify-between mt-2">
-        <div className="flex items-center px-3 py-2 rounded-2xl    bg-customOrange">
-          <CiLocationOn className="text-xl" />
-          <h1 className="text-sm">Pakistan, 110110</h1>
+        <div className="flex items-center px-3 py-2 rounded-2xl max-[440px]:px-1 max-[440px]:py-0    bg-customOrange">
+          <CiLocationOn className="text-xl " />
+          <h1 className="text-sm max-[440px]:text-[12px]">Pakistan, 110110</h1>
         </div>
         <div className="flex items-center  ">
           <input
             type="search"
             placeholder="Search"
-            className="p-1 text-sm w-[622px] max-sm:w-auto max-md:w-auto max-lg:w-auto border-gray-400 border-2 border-r-0 rounded-l-2xl focus:outline-none "
+            className="p-1 max-[440px]:w-[6rem] text-sm w-[622px] max-sm:w-auto max-md:w-auto max-lg:w-auto border-gray-400 border-2 border-r-0 rounded-l-2xl focus:outline-none "
           />
-          <CiSearch className="border-2 border-l-0 rounded-r-2xl text-[32px] border-gray-400 " />
+          <CiSearch className="border-2 border-l-0 rounded-r-2xl text-[32px]  border-gray-400 " />
+        </div>
+        <div className=" xl:hidden">
+          <Navbar />
         </div>
       </div>
       <nav>
-        <ul className="flex justify-between mt-3 text-sm max-sm:hidden max-md:flex-wrap max-md:gap-2 max-lg:flex-wrap max-lg:gap-3 max-lg:justify-evenly">
+        <ul className=" hidden xl:flex justify-between mt-3 text-sm max-sm:hidden max-md:flex-wrap max-md:gap-2 max-lg:flex-wrap max-lg:gap-3 max-lg:justify-evenly max-xl:gap-4 max-xl:justify-between">
           <li className="hover:underline">
             {" "}
             <Link href="#">Fresh</Link>

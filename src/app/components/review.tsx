@@ -8,7 +8,7 @@ const ReviewPage = () => {
       <h1 className="text-2xl font-bold border-b-4 border-dashed border-customOrange p-2 mt-6">
         Review your purchase
       </h1>
-      <section className="flex gap-6 justify-between max-sm:flex-col max-sm:w-auto  py-12">
+      <section className="flex gap-4 justify-between max-sm:flex-col max-sm:w-auto  py-12">
         <div className="w-[50%] h-96 border-4 rounded-xl flex justify-between gap-x-6 items-center max-lg:h-auto max-sm:gap-y-4 max-lg:gap-y-6 max-sm:flex-col max-sm:w-auto max-sm:py-5 max-lg:flex-col">
           <div className="flex-1">
             <Image
