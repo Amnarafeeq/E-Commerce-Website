@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 
-const Navbar = () => {
+const MenuBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 h-full bg-customOrange text-black z-50  transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out w-1/3 xl:hidden`}
+        } transition-transform duration-300 ease-in-out w-1/3 max-[660px]:w-[55%]  xl:hidden`}
       >
         <ul className="flex flex-col font-medium space-y-3 mt-12 ml-4">
           <li className="hover:underline ">
@@ -92,6 +92,6 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MenuBar;
 
 // ImCross FaBars

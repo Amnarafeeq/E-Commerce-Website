@@ -3,6 +3,7 @@ import React from "react";
 import { CiLocationOn, CiSearch } from "react-icons/ci";
 import { HiUserCircle } from "react-icons/hi";
 import Navbar from "./menu";
+import MenuBar from "./menu";
 
 const Header = () => {
   return (
@@ -32,7 +33,7 @@ const Header = () => {
           <CiSearch className="border-2 border-l-0 rounded-r-2xl text-[32px]  border-gray-400 " />
         </div>
         <div className=" xl:hidden">
-          <Navbar />
+          <MenuBar />
         </div>
       </div>
       <nav>
